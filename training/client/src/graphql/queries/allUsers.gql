@@ -1,0 +1,12 @@
+const ALL_USERS = gql `
+    query allUsers{
+        users{
+            id
+            firstname
+            lastname
+            middlename
+            nickname
+            birth_date
+        }
+    }
+`;

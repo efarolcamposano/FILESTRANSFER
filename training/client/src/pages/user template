@@ -1,0 +1,65 @@
+     <div v-for="user in users" :key="user.id">
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Last name</span>
+                </div>
+                <input type="text" class="form-control" id="lastName"  :value="user.lastname" placeholder="Last Name">
+            </div>
+    
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">First name</span>
+                </div>
+                <input type="text" class="form-control" id="firstName" :value="user.firstname" placeholder="First Name">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Middle name</span>
+                </div>
+                <input type="text" class="form-control" id="middleName" :value="user.middlename" placeholder="Middle Name">
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Nickname</span>
+                        </div>
+                        <input type="text" class="form-control" id="nickname" :value="user.nickname" placeholder="Nickname">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Birthday</span>
+                        </div>
+                        <input type="date" class="form-control" id="birthdate" :value="user.birth_date">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Email</span>
+                </div>
+                <input type="email" class="form-control" id="email" :value="user.email" placeholder="Email">
+            </div>
+
+        </div>
+
+
+apollo: {
+    users: gql`query {
+        users(where: {id: {_eq: 23}}){
+            id
+            firstname
+            lastname
+            middlename
+            nickname
+            birth_date
+            email
+        }
+    }`,
+},

@@ -1,0 +1,5 @@
+Blockchain
+    - It differs from a typical database in the way it stores information; Blockchain store data in blocks that are then chained together. 
+    
+    - Imagine a document with some information. Each person in the network keeps a copy of the same document. If there is an update in the document, it is generated across the network and everyone updates their own copy of the document. Lets say a new person comes with different content in the document, then all the others can verify their copy and detect that the new person is lying and kick him out of the network. 
+

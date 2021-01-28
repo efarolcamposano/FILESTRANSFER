@@ -1,0 +1,16 @@
+mutation {
+  delete_users (
+    where: {id: {_eq: 25}}
+  ) {
+    affected_rows
+  }
+  update_users (
+    where: {id: {_eq: 26}}
+    _set: {firstname: "Cory"}
+  ) {
+    returning {
+      id
+      firstname
+    }
+  }
+}

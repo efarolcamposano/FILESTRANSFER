@@ -1,0 +1,40 @@
+query($id: Int!)  {
+  users(where: {id: {_eq: $id}}){
+    firstname
+  }
+}
+
+query MyQuery($id: Int!)  {
+  users(where: {id: {_eq: $id}}){
+    firstname
+  }
+}
+
+
+data () {
+    return {
+        id: ''
+    }
+},
+created() {
+        this.id = this.$route.params.id;
+},
+methods: {
+    navigate() {
+        router.go(-1);
+    }
+},
+
+
+
+
+apollo: {
+  ping: {
+    query: gql`query PingMessage($message: String!) {
+      ping(message: $message)
+    }`,
+    variables: {
+      message: 'Meow',
+    },
+  },
+},

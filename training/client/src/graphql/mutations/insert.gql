@@ -1,0 +1,16 @@
+const ADD_USERS = gql `
+    mutation ($firstname: String!, $lastname: String!, $middlename: String!, $nickname: String!, $birth_date: String!,) {
+        insert_users(objects: {firstname: $firstname, lastname: $lastname, middlename: $middlename, nickname: $nickname, birth_date: $birth_date}){
+            affected_rows
+            returning {
+                id
+                firstname
+                lastname
+                middlename
+                nickname
+                birth_date
+                created_at
+            }
+        }
+    }
+`;

@@ -1,0 +1,50 @@
+RAMP Study list
+1. Public Key cryptography + BIP39
+    - Public key encryption, or public key cryptography, is a method of encrypting data with two different keys and making one of the keys, the public key, available for anyone to use. The other key is known as the private key. 
+
+    - Data encrypted with the public key can only be decrypted with the private key, and data encrypted with the private key can only be decrypted with the public key. Public key encryption is also known as asymmetric encryption. It is widely used, especially for TLS/SSL, which makes HTTPS possible.
+
+    - Public keys are stored on digital certificates for secure transport and sharing.
+
+    BIP39 
+        - Mnemonic code for generating deterministic keys.
+        - These mnemonics are further used to recover accounts and related crypto balance.
+        - Most common standard used for seed phrases
+        - Seed Phrases - list of words which store all the information needed to recover Bitcoin funds on-chain
+
+
+2. Ethereum Primer (smart contracts, decentralization, and privacy.)
+    - decentralized platform that allows us to write applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference. It consists of Ethereum Virtual Machine(EVM) which provides the container in which all the smart contracts can be executed.
+
+    - blockchain-based software platform can be used for sending and receiving value globally and ive users more control of their finances and online data without a third party watching or stepping in unexpectedly. 
+
+    Smart Contract
+        - A smart contract doesn’t require a third party like a bank, notary, or government official to verify it. Instead a cryptographic code is attached to the contract verifying that this is the one true version of the contract, agreed upon by the two parties.
+
+        Instead of being stored on a central database, smart contracts are stored in multiple copies on a large global network of computers. For a criminal hacker to change the contract, they would have to simultaneously change thousands of computers, which is nearly impossible.
+
+    Decentralized applications/DAPP
+        - the creation of virtual worlds, marketplaces for digital art and other assets such as decentralized finance.
+
+    Privacy
+        - Companies like Facebook and Google keep your information on their servers where other companies and even criminals could access them. With a DAPP on ethereum, you can put limits on what the smart contract can do with your information and take it back when it’s done.
+
+    From December 1, 2020, ethereum has started its transition to Ethereum 2.0, a blockchain system that can process more transactions at lower cost and with less consumption of electricity.
+
+
+3. TomoChain + Pantograph extension
+    TomoChain 
+    - TomoChain decentralized blockchain projects that is build to solve the scalability issues that many blockchains have.
+    - It does this by increasing TPS (Transactions per Second).
+    - Scalability includes network congestion, long wait time for transaction validation, and the high transaction fees that come along with these issues.
+
+    Pantograph
+    - Exists as an extension wallet, which make easier for the power of the TomoChain Blockchain.
+    - The app enables you to experience the decentralized network spectacularly right on your favorite browser, without establishing a full node on TomoChain.
+
+4. RAMP Defi whitepaper + products
+    RAMP Defi whitepaper
+    - 
+
+5. The glitch dashboard code
+

@@ -1,0 +1,109 @@
+<template>
+  <div class="add-user">
+    <div>
+      <div class="add-input">
+        <p>Users</p>
+        <button>Add</button>
+      </div>
+      <div class="select-input">
+        <label for="role">Role:</label>
+        <select id="role" v-model="role">
+          <option value="All">All</option>
+          <option value="Students">Students</option>
+          <option value="Teachers">Teachers</option>
+        </select>
+      </div>
+
+      <div class="search-input">
+        <input type="text" v-model="searchQuery" placeholder="Search" >
+      </div>
+
+    </div>
+
+    <div class="users-list">
+      <ul>
+        <li v-for="user in filterUsers" :key="user.id">
+          <router-link to='/'>{{user.name}}</router-link>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</template>
+
+
+<script>
+import users from "@/data/users";
+
+ export default {
+   name: 'AddUser',
+   data() {
+    return {
+      searchQuery: '',
+      role: '',
+      users,
+    };
+   },
+   computed: {
+     filterUsers() {
+       return this.resultQuery(this.filterByRole(this.users))
+     }
+   },
+   methods: {
+     resultQuery: function() {
+       if(this.searchQuery) {
+         return this.users.filter(user => {
+           return this.searchQuery.toLowerCase().split(' ').every(v => user.name.toLowerCase().includes(v))
+         })
+       } else {
+         return this.users;
+       }
+     },
+     filterByRole: function() {
+       return this.users.filter(user => !user.role.indexOf(this.role))
+     }
+   }
+ }
+</script>
+
+<style scoped>
+  .add-user {
+    width: 30%;
+    padding: 15px 20px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  .add-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .select-input {
+    display: flex;
+  }
+
+  .select-input #role {
+    flex: 1;
+    margin: 0 5px;
+  }
+
+  .search-input input{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .users-list {
+    padding: 0 5px;
+    border: 1px solid #000;
+    margin-top: 20px;
+    min-height: 500px;
+  }
+
+  .users-list ul li {
+    margin-bottom: 30px;
+    list-style: none;
+  }
+</style>
+now

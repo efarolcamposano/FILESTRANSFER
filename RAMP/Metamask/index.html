@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>Metamask</title>
+    <style>
+        body {
+            color: #8a8a8a;
+        }
+        span {
+            color: #000;
+        }
+        .connection {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="app">
+        
+        <p class="metamask"></p>
+
+        <p>Locked: <span class="isLock">Your MetaMask is Locked</span></p>
+        <p>Connection: <span class="connection">No Connected</span></p>
+
+        <p>Current Network: <span class="currNetwork">-</span></p>
+        <p>Account Address: <span class="account">-</span></p>
+       <p>Account Balance: <span class="accounttBalance">-</span></p>
+
+
+    <div class="field">
+        <label for="ether">Ether Amount</label>
+        <input type="text" id="ether" class="etherAmount">
+    </div>
+
+    <div class="field">
+        <label for="address">Receiver Addresss</label>
+        <input type="text" id="address" class="receiverAdr">
+    </div>
+
+    <button class="sendToken">Send</button>
+
+    </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

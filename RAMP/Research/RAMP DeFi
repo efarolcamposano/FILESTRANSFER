@@ -1,0 +1,100 @@
+x-------------------------------------------------------------------------------------------------x
+ Public key cryptography 
+x----------------x
+a cryptographic system which uses pairs of keys: Public key and private key.
+
+public key  is use only for encrypting data and can only be decrypted by matching private key.  
+
+the public key can be distributed without compromising security.
+
+
+  BIP39 
+        - Mnemonic code for generating deterministic keys.
+        - These mnemonics are further used to recover accounts and related crypto balance.
+        - Most common standard used for seed phrases
+        - Seed Phrases - list of words which store all the information needed to recover Bitcoin funds on-chain
+
+        Deterministic - means that keys are no longer created randomly, but instead generated as part of a linked chain. Regular backups are no longer required as 
+        long as the private-key seed that created the chain is safe.
+
+
+x-------------------------------------------------------------------------------------------------x
+ Ethereum
+x----------------x
+It's a technology behind the cryptocurrency ether and it's a open-source platform for people to build decentralized applications.  
+
+    Decentralized Applications (or DApps) are applications that do not rely on a centralized backend running in AWS or Azure. 
+
+You can alse use Ethereum for:
+
+1. Ethereum wallet - to access to your ethereum funds and application. Only you have access to your wallet.
+2. Get StableCoin - you can buy, earn by working on ethereum projects or borrow using crypto collateral.
+3. Stake Eth - to become etheruem validator and earn you new ETH in the process.
+
+    As a validator you’ll be responsible for storing data, processing transactions, and adding new blocks to the blockchain. This will keep ethereum secure to everyone.
+    
+
+
+x-------------------------------------------------------------------------------------------------x
+Tomo Chain + Pantograph extension
+x------------------------------------------x
+TomoChain is a scalable blockchain-powered via Proof-of-Stake Voting consensus and used commercially by companies globally.
+
+You can also create Decentralized App in TomoChain, write your own contract, deploy your App and create UI to interact with smart contract.
+
+    Consensus Mechanism - authenticating and validating a value or transaction on a Blockchain 
+                        - a distributed ledger without the need to trust or rely on a central authority.
+
+# Pantograph extension - A TomoChain wallet in your browser. It exist as an extension wallet which facilitate the TomoChain blockchain without setting up a full node on TomoChain.
+
+
+
+x-------------------------------------------------------------------------------------------------x
+ RAMP DeFi
+x----------------x
+What I understand about RAMP is, it allows you to leverage those assets without losing liquidity rewards.
+
+Ex.
+"If you stake on their RAMP DeFi node, you will be able to use those assets as a collateral to get some stablecoin (rUSD) in return. So, You can use that on the 
+ethereum blockchain to buy whatever you want without losing your liquidity rewards."
+
+
+
+
+
+ERC20 - ether request command - token Interface of the ERC20. 
+
+ERC20 its dividible.
+
+SERC20.sol. (solidty)
+
+address of owner and the Id of the owner.
+
+metamask deal with ERC20.
+
+openzeppelin github / openzeppelin-contracts.
+
+
+
+---------------------------------------------------------------
+stablecoin
+- rUSD 
+
+assets collateral 
+- 
+
+proof of work with electricity cost
+vs 
+proof of stake
+
+crypto51.app
+
+smartcontract (is compose codes solidty) autonomous.
+
+Cross chain liquidity 
+
+liquidity - money ready to spend.
+
+
+
+

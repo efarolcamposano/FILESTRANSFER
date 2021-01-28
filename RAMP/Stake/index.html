@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>Stake</title>
+
+    <style>
+       .container {
+            display: flex;
+        }
+        .card {
+            position: relative;
+            display: table;
+            background: #353b53;
+            padding: 15px;
+            border-radius: 4px;
+            color: #fff;
+            text-align: center;
+            margin: 15px;
+            width: 200px;
+        }
+
+        .card__balance {
+            padding: 20px 0;
+            font-size: 2em;
+        }
+
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        button {
+            cursor: pointer;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #353b53;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .overlay button {
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>POC Earned</h3>
+            <div class="card__balance pocEarnedBalance">0</div>
+            <button class="settleBtn">Settle</button> 
+        </div>
+        <div class="card">
+            <h3>USDC Staked</h3>
+            <div class="card__balance stakeBalance">0</div>
+            <button class="minusStakeBtn">-</button> 
+            <button class="addStakeBtn">+</button> 
+            <div class="overlay">
+                <button class="approveBtn">Approve USDC</button>
+                <p>Max 20,000 USDC per stake</p>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js" type="application/javascript"></script>
+<script src="/script.js"></script>    
+</body>
+</html>

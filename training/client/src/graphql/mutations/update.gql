@@ -1,0 +1,23 @@
+mutation MyMutation {
+  update_users(_set: {birth_date: "aug 01 1993", email: "es@gmail.com", firstname: "jen", lastname: "san jose", middlename: "cast", nickname: "j"}, where: {id: {_eq: 27}}){
+    affected_rows
+  }
+}
+
+
+
+mutation MyMutation($birth_date: String, $email: String, $firstname: String, $lastname: String, $middlename: String, $nickname: String) {
+  update_users(_set: {birth_date: $birth_date, email: $email, firstname: $firstname, lastname: $lastname, middlename: $middlename, nickname: $nickname}, where: {id: {_eq: 27}}){
+    affected_rows
+  }
+}
+
+
+{
+  "birth_date": "Nov 1, 2001",
+  "email": "efarol@gmail.com",
+  "firstname": "engelbert",
+  "lastname": "farol",
+  "middlename": "campo",
+  "nickname": "bert"
+}
